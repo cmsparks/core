@@ -316,14 +316,14 @@ func TestCreateAndGetAndRemoveResume(t *testing.T) {
 
 	expectedResumeOne.BlobKey = "http://fakestorage.local"
 
-	if !(reflect.DeepEqual(expectedResumeOne, resumes[0]))  {
-    t.Fatalf("expected '%+v'', got '%+v'", expectedResumeOne, resumes[0])
+	if !(reflect.DeepEqual(expectedResumeOne, resumes[0])) {
+		t.Fatalf("expected '%+v'', got '%+v'", expectedResumeOne, resumes[0])
 	}
 
-  err = svc.DeleteResume(resumes[0].Username)
-  if err != nil {
-    t.Fatal(err)
-  }
+	err = svc.DeleteResume(resumes[0].Username)
+	if err != nil {
+		t.Fatal(err)
+	}
 
 	resumes, err = svc.GetResumes()
 	expectedCount = 0
