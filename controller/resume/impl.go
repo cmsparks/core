@@ -110,8 +110,8 @@ func (controller *ResumeController) DeleteResume(ctx *context.Context) error {
 	if err != nil {
 		return ctx.JSONError(
 			http.StatusBadRequest,
-			"Failed Resumes Approval",
-			"could not mark resume as approved",
+			"Failed Resumes Deletion",
+			"could not delete resume",
 			err,
 		)
 	}
