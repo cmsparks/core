@@ -76,112 +76,144 @@ sigs:
   - name: Gamebuilders
     description: Anything and everything related to game development
     chairs: Aditya Bawankule
-    meetingTime: 'Monday 7:00 PM - 8:30 PM'
-    meetingLocation: Siebel 3405
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Monday 7:00 PM - 8:30 PM'
+        meetingLocation: Siebel 3405
     website: http://gamebuilders.acm.illinois.edu/
     email: adityab2@illinois.edu
   - name: GLUG
     description: GNU/Linux Users Group
     chairs: Jav Mohamed
-    meetingTime: 'Thursday 5:00 PM - 6:00 PM'
-    meetingLocation: Siebel 1109
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Thursday 5:00 PM - 6:00 PM'
+        meetingLocation: Siebel 1109
     website: http://gnulug.org
     email: glug@acm.illinois.org
   - name: ICPC
     description: Competitive programming skill development and competitions
     chairs: Vivek Gupta, Eric Wang
-    meetingTime: 'Tuesday 7:00 PM - 9:00 PM'
-    meetingLocation: Siebel 1109
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Tuesday 7:00 PM - 9:00 PM'
+        meetingLocation: Siebel 1109
     website: http://icpc.cs.illinois.edu/
     email: icpc@cs.illinois.edu
   - name: SIGBot
     description: Special Interest Group for Robotics
     chairs: Ananmay Jain
-    meetingTime: 'Saturday & Sunday 12:00 PM - 2:00 PM'
-    meetingLocation: Siebel 1104
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Saturday & Sunday 12:00 PM - 2:00 PM'
+        meetingLocation: Siebel 1104
     website: http://illinoisauv.com/
     email: ananmay3@illinois.edu
   - name: SIGCHI
     description: Special Interest Group for Human-Computer Interaction
     chairs: Jeffrey Tsai
-    meetingTime: 'Tuesday 5:00 PM - 7:00 PM'
-    meetingLocation: Siebel 1304
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Tuesday 5:00 PM - 7:00 PM'
+        meetingLocation: Siebel 1304
     website: http://sigchi.acm.illinois.edu/
     email: jeffrey5@illinois.edu
   - name: SIGGRAPH
     description: Special Interest Group for Graphics
     chairs: Chen Qian
-    meetingTime: 'Monday 6:00 PM - 7:00 PM'
-    meetingLocation: Siebel 3401
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Monday 6:00 PM - 7:00 PM'
+        meetingLocation: Siebel 3401
     website: https://acm-uiuc.github.io/siggraph/
     email: siggraphuiuc@gmail.com
   - name: AIDA
     description: Artificial Intelligence and Data Analytics
     chairs: Jeffrey Lai, Arjun Gupta, Shaw Kagawa
-    meetingTime: 'Sunday 1:00 PM - 4:00 PM'
-    meetingLocation: Siebel 1105
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Sunday 1:00 PM - 4:00 PM'
+        meetingLocation: Siebel 1105
     website: https://aida.acm.illinois.edu
     email: sig-aida-request@lists.illinois.edu
   - name: QUIUC
     description: Special Interest Group for Quantum Computing
     chairs: Bailey Tincher, Graeme Jacobson
-    meetingTime: 'Sunday 2:00 PM - 3:00 PM'
-    meetingLocation: Siebel 1103
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Sunday 2:00 PM - 3:00 PM'
+        meetingLocation: Siebel 1103
     website: https://www.quiuc.org
     email: info@quiuc.org
   - name: SIGOPS
     description: Special Interest Group for Operating Systems
     chairs: Anshul Sanamvenkata, Chinmaya Mahesh, Kapil Kanwar
-    meetingTime: 'Saturday 12:00 PM - 2:00 PM'
-    meetingLocation: Siebel 1302
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Saturday 12:00 PM - 2:00 PM'
+        meetingLocation: Siebel 1302
     website: http://sigops.acm.illinois.edu
     email: anshul2@illinois.edu
   - name: SIGMobile
     description: Special Interest Group for Mobile Development
     chairs: Patrick Feltes
-    meetingTime: 'Tuesday 5:00 PM - 6:00 PM'
-    meetingLocation: Siebel 1214
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Tuesday 5:00 PM - 6:00 PM'
+        meetingLocation: Siebel 1214
     website: http://github.com/SIGMobileUIUC
     email: pfeltes2@illinois.edu
   - name: SIGMusic
     description: Special Interest Group for Music
     chairs: Melissa Chen, Sahil Patel
-    meetingTime: 'Thursday 6:00 PM - 7:00 PM'
-    meetingLocation: Siebel 1109
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Thursday 6:00 PM - 7:00 PM'
+        meetingLocation: Siebel 1109
     website: http://sigmusic.acm.illinois.edu
     email: myc2@illinois.edu
   - name: SIGPwny
     description: Special Interest Group for Security
     chairs: Joseph Ravichandran
-    meetingTime: 'Thursday 6:00 PM - 7:00 PM'
-    meetingLocation: Siebel 1314
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Thursday 6:00 PM - 7:00 PM'
+        meetingLocation: Siebel 1314
     website: https://sigpwny.com
     email: jpr3@illinois.edu
   - name: SIGBlockchain
     description: Special Interest Group for Blockchain Technologies
     chairs: Jason Maldonado
-    meetingTime: 'Wednesday 5:00 PM - 6:00 PM'
-    meetingLocation: Siebel 1302
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Wednesday 5:00 PM - 6:00 PM'
+        meetingLocation: Siebel 1302
     website: ''
     email: jmaldo2@illinois.edu
   - name: SIGNLL
     description: Special Interest Group for Natural Language Learning
     chairs: Jackie Oh, Jason Xia
-    meetingTime: 'Wednesday 5:30 PM - 6:30 PM'
-    meetingLocation: Siebel 1214
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Wednesday 5:30 PM - 6:30 PM'
+        meetingLocation: Siebel 1214
     website: https://www.facebook.com/groups/uiucsignll
     email: jmoh3@illinois.edu
   - name: SIGArch
     desription: Special Interest Group for Architecture
     chairs: Kris Koepcke
-    meetingTime: 'Tuesday 6:00 PM - 7:00 PM'
-    meetingLocation: Siebel 1214
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Tuesday 6:00 PM - 7:00 PM'
+        meetingLocation: Siebel 1214
     website: ''
     email: koepcke2@illinois.edu
   - name: SIGPlan
     description: Special Interest Group for Programming Languages
     chairs: Reed Oei
-    meetingTime: 'Sunday 4:00 PM - 5:00 PM'
-    meetingLocation: Siebel 2407
+    meetings:
+      - topic: General Meeting
+        meetingTime: 'Sunday 4:00 PM - 5:00 PM'
+        meetingLocation: Siebel 2407
     website: ''
     email: reedoei2@illinois.edu

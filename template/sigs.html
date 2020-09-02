@@ -16,10 +16,15 @@
                                   {{.Description}}
                               </span>
                               <br/>
-                              <span>
-                                  <b> {{.MeetingTime}} </b> - {{.MeetingLocation}}
-                              </span>
-                              <br/>
+                              <ul>
+                                {{ range .Meetings }}
+                                  <li>
+                                    <b>{{.Topic}}</b>
+                                    <br />
+                                    {{.MeetingTime}} - {{.MeetingLocation}}
+                                  </li>
+                                {{end}}
+                              </ul>
                               <span>
                                   <i> Chair(s) </i> - <b> {{.Chairs}} </b>
                               </span>
@@ -46,10 +51,15 @@
                                 {{.Description}}
                             </span>
                             <br/>
-                            <span>
-                                <b> {{.MeetingTime}} </b> - {{.MeetingLocation}}
-                            </span>
-                            <br/>
+                            <ul>
+                              {{ range .Meetings }}
+                                <li>
+                                  <b>{{.Topic}}</b>
+                                  <br />
+                                  {{.MeetingTime}} - {{.MeetingLocation}}
+                                </li>
+                              {{end}}
+                            </ul>
                             <span>
                                 <i> Chair(s) </i> - <b> {{.Chairs}} </b>
                             </span>
