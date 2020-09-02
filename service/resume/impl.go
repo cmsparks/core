@@ -68,7 +68,7 @@ func (service *resumeImpl) ApproveResume(username string) error {
 func (service *resumeImpl) DeleteResume(username string) error {
 	err := service.deleteResume(username)
 	if err != nil {
-		return fmt.Errorf("failed to approve resume: %w", err)
+		return fmt.Errorf("failed to delete resume: %w", err)
 	}
 
 	return nil
