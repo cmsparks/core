@@ -23,7 +23,7 @@
                             </tr>
                         </thead>
                         {{range .Resumes}}
-                            <tr>
+                          <tr id="{{.Username}}-row">
                                 <td>
                                     {{if not .Approved}}
                                         <button id="{{.Username}}-mark-btn" type="button" class="button" onClick="approveResume({{.Username}})">Approve</button>
@@ -31,6 +31,7 @@
                                     {{else}}
                                         <p>APPROVED</p>
                                     {{end}}
+                                    <button id="{{.Username}}-mark-btn" type="button" class="button" onClick="deleteResume({{.Username}})">Delete</button>
                                 </td>
                                 <td>{{.FirstName}} {{.LastName}}</td>
                                 <td>{{.Username}}</td>
@@ -62,6 +63,21 @@
         }).then(data => {
             document.getElementById(username + "-mark-btn").style.display = "none"
             document.getElementById(username + "-mark").hidden = false;
+        })
+    }
+    function deleteResume(username) {
+        fetch("/api/resume", {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                username: username,
+            }),
+        }).then(res => {
+            return res.json();
+        }).then(data => {
+            document.getElementById(username + "-row").style.display = "none"
         })
     }
 </script>

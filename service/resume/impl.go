@@ -65,6 +65,15 @@ func (service *resumeImpl) ApproveResume(username string) error {
 	return nil
 }
 
+func (service *resumeImpl) DeleteResume(username string) error {
+	err := service.deleteResume(username)
+	if err != nil {
+		return fmt.Errorf("failed to delete resume: %w", err)
+	}
+
+	return nil
+}
+
 func (service *resumeImpl) validateResume(resume *model.Resume) error {
 	if resume.Approved {
 		return fmt.Errorf("resume should not be approved")
@@ -172,6 +181,19 @@ func (service *resumeImpl) markApproved(username string) error {
 	_, err := service.db.NamedExec("UPDATE resumes SET approved=:approved WHERE username=:username", resume)
 	if err != nil {
 		return fmt.Errorf("failed to update resume: %w", err)
+	}
+
+	return nil
+}
+
+func (service *resumeImpl) deleteResume(username string) error {
+	resume := &model.Resume{
+		Username: username,
+	}
+
+	_, err := service.db.NamedExec("DELETE FROM resumes WHERE username = :username", resume)
+	if err != nil {
+		return fmt.Errorf("failed to remove resume from database: %w", err)
 	}
 
 	return nil

@@ -92,3 +92,29 @@ func (controller *ResumeController) ApproveResume(ctx *context.Context) error {
 
 	return ctx.JSON(http.StatusOK, struct{}{})
 }
+
+func (controller *ResumeController) DeleteResume(ctx *context.Context) error {
+	req := model.Resume{}
+
+	err := ctx.Bind(&req)
+	if err != nil {
+		return ctx.JSONError(
+			http.StatusBadRequest,
+			"Failed Bind",
+			"malformed request",
+			err,
+		)
+	}
+
+	err = controller.svc.Resume.DeleteResume(req.Username)
+	if err != nil {
+		return ctx.JSONError(
+			http.StatusBadRequest,
+			"Failed Resumes Deletion",
+			"could not delete resume",
+			err,
+		)
+	}
+
+	return ctx.JSON(http.StatusOK, struct{}{})
+}

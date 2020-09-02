@@ -12,6 +12,7 @@ type ResumeService interface {
 	GetResumes() ([]model.Resume, error)
 	GetFilteredResumes(filters map[string][]string) ([]model.Resume, error)
 	ApproveResume(username string) error
+	DeleteResume(username string) error
 }
 
 func New() (ResumeService, error) {

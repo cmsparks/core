@@ -145,6 +145,14 @@ func New(svc *service.Service) (*Controller, error) {
 			},
 		)),
 	)
+	controller.DELETE(
+		"/api/resume",
+		Chain(resumeController.DeleteResume, middleware.AuthorizeMatchAnyAPI(
+			controller.svc, middleware.AuthorizeMatchParameters{
+				Committees: []string{model.GroupTop4, model.GroupCorporate, model.GroupAdmin},
+			},
+		)),
+	)
 
 	controller.GET(
 		"/",
