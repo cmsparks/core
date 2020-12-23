@@ -15,7 +15,7 @@ logoUri: /static/images/rp-logo.svg
 website: http://reflectionsprojections.org
 websiteArchive:
   - year: 2020
-    uri: https://2020.reflectionsprojections.org
+    uri: https://reflectionsprojections.org
   - year: 2019
     uri: https://2019.reflectionsprojections.org
   - year: 2018
