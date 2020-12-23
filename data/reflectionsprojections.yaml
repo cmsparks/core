@@ -1,68 +1,68 @@
 ---
-name: Reflections | Projections
-description: >
-  Reflections | Projections, founded in 1995, is a technology conference
-  operated by students in ACM@UIUC. Striving to cater to our community of
-  students, alumni, and professionals, we provide a forum to share and learn
-  about current advancements in computer science and its applications. We have
-  tech talks from across the industry and academia, workshops and
-  puzzle-solving events for attendees, Mechmania (our annual artificial
-  intelligence programming competition), and Diversity × Tech (a day of events
-  celebrating diversity in tech). The entire conference is completely free for
-  anyone to attend, regardless of age, major, or affiliation with UIUC. This
-  year, Reflections | Projections will occur September 16th - September 21st.
-logoUri: /static/images/rp-logo.svg
-website: http://reflectionsprojections.org
-websiteArchive:
-  - year: 2020
-    uri: https://2020.reflectionsprojections.org
-  - year: 2019
-    uri: https://2019.reflectionsprojections.org
-  - year: 2018
-    uri: https://reflectionsprojections.github.io/rp2018
-  - year: 2017
-    uri: https://reflectionsprojections.github.io/rp2017
-  - year: 2016
-    uri: https://reflectionsprojections.github.io/rp2016
-  - year: 2015
-    uri: https://reflectionsprojections.github.io/rp2015
-  - year: 2014
-    uri: https://reflectionsprojections.github.io/rp2014
-  - year: 2013
-    uri: https://reflectionsprojections.github.io/rp2013
-  - year: 2012
-    uri: https://reflectionsprojections.github.io/rp2012
-  - year: 2011
-    uri: https://reflectionsprojections.github.io/rp2011
-  - year: 2010
-    uri: https://reflectionsprojections.github.io/rp2010
-  - year: 2009
-    uri: https://reflectionsprojections.github.io/rp2009
-  - year: 2008
-    uri: https://reflectionsprojections.github.io/rp2008
-  - year: 2007
-    uri: https://reflectionsprojections.github.io/rp2007
-  - year: 2006
-    uri: https://reflectionsprojections.github.io/rp2006
-  - year: 2005
-    uri: https://reflectionsprojections.github.io/rp2005
-  - year: 2004
-    uri: https://reflectionsprojections.github.io/rp2004
-  - year: 2003
-    uri: https://reflectionsprojections.github.io/rp2003
-  - year: 2002
-    uri: https://reflectionsprojections.github.io/rp2002
-  - year: 2001
-    uri: https://reflectionsprojections.github.io/rp2001
-  - year: 2000
-    uri: https://reflectionsprojections.github.io/rp2000
-  - year: 1999
-    uri: https://reflectionsprojections.github.io/rp1999
-  - year: 1998
-    uri: https://reflectionsprojections.github.io/rp1998
-  - year: 1997
-    uri: https://reflectionsprojections.github.io/rp1997
-  - year: 1996
-    uri: https://reflectionsprojections.github.io/rp1996
-  - year: 1995
-    uri: https://reflectionsprojections.github.io/rp1995
+- name: Reflections | Projections
+  description: >
+    Reflections | Projections, founded in 1995, is a technology conference
+    operated by students in ACM@UIUC. Striving to cater to our community of
+    students, alumni, and professionals, we provide a forum to share and learn
+    about current advancements in computer science and its applications. We have
+    tech talks from across the industry and academia, workshops and
+    puzzle-solving events for attendees, Mechmania (our annual artificial
+    intelligence programming competition), and Diversity × Tech (a day of events
+    celebrating diversity in tech). The entire conference is completely free for
+    anyone to attend, regardless of age, major, or affiliation with UIUC. This
+    year, Reflections | Projections will occur September 16th - September 21st.
+  logoUri: /static/images/rp-logo.svg
+  website: http://reflectionsprojections.org
+  websiteArchive:
+    - year: 2020
+      uri: https://2020.reflectionsprojections.org
+    - year: 2019
+      uri: https://2019.reflectionsprojections.org
+    - year: 2018
+      uri: https://reflectionsprojections.github.io/rp2018
+    - year: 2017
+      uri: https://reflectionsprojections.github.io/rp2017
+    - year: 2016
+      uri: https://reflectionsprojections.github.io/rp2016
+    - year: 2015
+      uri: https://reflectionsprojections.github.io/rp2015
+    - year: 2014
+      uri: https://reflectionsprojections.github.io/rp2014
+    - year: 2013
+      uri: https://reflectionsprojections.github.io/rp2013
+    - year: 2012
+      uri: https://reflectionsprojections.github.io/rp2012
+    - year: 2011
+      uri: https://reflectionsprojections.github.io/rp2011
+    - year: 2010
+      uri: https://reflectionsprojections.github.io/rp2010
+    - year: 2009
+      uri: https://reflectionsprojections.github.io/rp2009
+    - year: 2008
+      uri: https://reflectionsprojections.github.io/rp2008
+    - year: 2007
+      uri: https://reflectionsprojections.github.io/rp2007
+    - year: 2006
+      uri: https://reflectionsprojections.github.io/rp2006
+    - year: 2005
+      uri: https://reflectionsprojections.github.io/rp2005
+    - year: 2004
+      uri: https://reflectionsprojections.github.io/rp2004
+    - year: 2003
+      uri: https://reflectionsprojections.github.io/rp2003
+    - year: 2002
+      uri: https://reflectionsprojections.github.io/rp2002
+    - year: 2001
+      uri: https://reflectionsprojections.github.io/rp2001
+    - year: 2000
+      uri: https://reflectionsprojections.github.io/rp2000
+    - year: 1999
+      uri: https://reflectionsprojections.github.io/rp1999
+    - year: 1998
+      uri: https://reflectionsprojections.github.io/rp1998
+    - year: 1997
+      uri: https://reflectionsprojections.github.io/rp1997
+    - year: 1996
+      uri: https://reflectionsprojections.github.io/rp1996
+    - year: 1995
+      uri: https://reflectionsprojections.github.io/rp1995

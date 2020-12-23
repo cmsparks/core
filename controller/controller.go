@@ -179,10 +179,10 @@ func New(svc *service.Service) (*Controller, error) {
 		Chain(siteController.HackIllinois),
 	)
 
-	controller.GET(
+	/*controller.GET(
 		"/hackthis",
 		Chain(siteController.HackThis),
-	)
+	)*/
 
 	controller.GET(
 		"/sponsors",
