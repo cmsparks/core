@@ -167,10 +167,10 @@ func (controller *SiteController) ReflectionsProjections(ctx *context.Context) e
 
 	params := struct {
 		Authenticated bool
-		Events         []model.Event
+		Events        []model.Event
 	}{
 		Authenticated: ctx.LoggedIn,
-		Events:         events,
+		Events:        events,
 	}
 
 	return ctx.Render(http.StatusOK, "event", params)
@@ -200,10 +200,10 @@ func (controller *SiteController) HackIllinois(ctx *context.Context) error {
 
 	params := struct {
 		Authenticated bool
-		Events         []model.Event
+		Events        []model.Event
 	}{
 		Authenticated: ctx.LoggedIn,
-		Events:         events,
+		Events:        events,
 	}
 
 	return ctx.Render(http.StatusOK, "event", params)
