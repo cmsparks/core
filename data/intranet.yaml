@@ -36,10 +36,10 @@ cards:
       - Basic
       - Paid
 links:
-  - name: Mailing Lists
-    uri: https://www-s.acm.illinois.edu/mailman/listinfo
   - name: Slack
     uri: https://acm-uiuc.slack.com
+  - name: Discord
+    uri: https://discord.gg/xW24ANd
   - name: GitHub
     uri: https://github.com/acm-uiuc
   - name: Facebook Group
