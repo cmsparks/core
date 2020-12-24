@@ -1,26 +1,36 @@
 ---
-name: HackIllinois
-description: >
-  Established in 2014, HackIllinois is the premier collegiate open source
-  hackathon. With over 1000 attendees and 50 open source mentors in 2019,
-  the hackathon has grown to become one of the largest and most well-regarded
-  in the nation. This year, we're proud to welcome you to the 7th annual
-  HackIllinois from February 28 - March 1, 2020, on the Urbana-Champaign
-  campus.
-logoUri: /static/images/hack-logo.svg
-website: https://hackillinois.org
-websiteArchive:
-  - year: 2020
-    uri: https://2020.hackillinois.org
-  - year: 2019
-    uri: https://2019.hackillinois.org
-  - year: 2018
-    uri: https://2018.hackillinois.org
-  - year: 2017
-    uri: https://2017.hackillinois.org
-  - year: 2016
-    uri: https://2016.hackillinois.org
-  - year: 2015
-    uri: https://2015.hackillinois.org
-  - year: 2014
-    uri: https://2014.hackillinois.org
+- name: HackIllinois
+  description: >
+    Established in 2014, HackIllinois is the premier collegiate open source
+    hackathon. With over 1000 attendees and 50 open source mentors in 2019,
+    the hackathon has grown to become one of the largest and most well-regarded
+    in the nation. This year, we're proud to welcome you to the 7th annual
+    HackIllinois from February 28 - March 1, 2020, on the Urbana-Champaign
+    campus.
+  logoUri: /static/images/hack-logo.svg
+  website: https://hackillinois.org
+  websiteArchive:
+    - year: 2020
+      uri: https://2020.hackillinois.org
+    - year: 2019
+      uri: https://2019.hackillinois.org
+    - year: 2018
+      uri: https://2018.hackillinois.org
+    - year: 2017
+      uri: https://2017.hackillinois.org
+    - year: 2016
+      uri: https://2016.hackillinois.org
+    - year: 2015
+      uri: https://2015.hackillinois.org
+    - year: 2014
+      uri: https://2014.hackillinois.org
+- name: HackThis
+  description: >
+    2020 marks a significant year for HackIllinois. In response to the need
+    to develop tools for online learning and collaboration, we hosted
+    HackThis: a week long fully virtual summer hackathon.
+  logoUri: /static/images/hackthis-logo.svg
+  website: https://hackthis.hackillinois.org/
+  websiteArchive:
+    - year: 2020
+      uri: https://hackthis.hackillinois.org/

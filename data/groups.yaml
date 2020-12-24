@@ -33,10 +33,18 @@ committees:
   - name: Corporate
     description: >
       The corporate team handles communication with ACM@UIUC's sponsors
-    chairs: Cecilia Ding
+    chairs: Chaitanya Sood
     email: corporate@acm.illinois.edu
     members:
-      - username: cding20
+      - username: varunsn2
+      - username: adithcn2
+      - username: tejeshb2
+      - username: minaoka2
+      - username: mmavila3
+      - username: riyaj3
+      - username: megharm2
+      - username: podar2
+      - username: csood2
   - name: Events
     description: The events team runs Reflections | Projections and HackIllinois
     chairs: Cecilia Ding

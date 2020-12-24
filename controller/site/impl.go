@@ -154,8 +154,8 @@ func (controller *SiteController) ReflectionsProjections(ctx *context.Context) e
 		)
 	}
 
-	event := model.Event{}
-	err = controller.svc.Store.ParseInto(eventUri, &event)
+	events := []model.Event{}
+	err = controller.svc.Store.ParseInto(eventUri, &events)
 	if err != nil {
 		return ctx.RenderError(
 			http.StatusBadRequest,
@@ -167,10 +167,10 @@ func (controller *SiteController) ReflectionsProjections(ctx *context.Context) e
 
 	params := struct {
 		Authenticated bool
-		Event         model.Event
+		Events        []model.Event
 	}{
 		Authenticated: ctx.LoggedIn,
-		Event:         event,
+		Events:        events,
 	}
 
 	return ctx.Render(http.StatusOK, "event", params)
@@ -187,8 +187,8 @@ func (controller *SiteController) HackIllinois(ctx *context.Context) error {
 		)
 	}
 
-	event := model.Event{}
-	err = controller.svc.Store.ParseInto(eventUri, &event)
+	events := []model.Event{}
+	err = controller.svc.Store.ParseInto(eventUri, &events)
 	if err != nil {
 		return ctx.RenderError(
 			http.StatusBadRequest,
@@ -200,43 +200,10 @@ func (controller *SiteController) HackIllinois(ctx *context.Context) error {
 
 	params := struct {
 		Authenticated bool
-		Event         model.Event
+		Events        []model.Event
 	}{
 		Authenticated: ctx.LoggedIn,
-		Event:         event,
-	}
-
-	return ctx.Render(http.StatusOK, "event", params)
-}
-
-func (controller *SiteController) HackThis(ctx *context.Context) error {
-	eventUri, err := config.GetConfigValue("HACKTHIS_URI")
-	if err != nil {
-		return ctx.RenderError(
-			http.StatusBadRequest,
-			"Failed Getting Event Data",
-			"could not get event data uri",
-			err,
-		)
-	}
-
-	event := model.Event{}
-	err = controller.svc.Store.ParseInto(eventUri, &event)
-	if err != nil {
-		return ctx.RenderError(
-			http.StatusBadRequest,
-			"Failed Getting Event Data",
-			"could not parse event data",
-			err,
-		)
-	}
-
-	params := struct {
-		Authenticated bool
-		Event         model.Event
-	}{
-		Authenticated: ctx.LoggedIn,
-		Event:         event,
+		Events:        events,
 	}
 
 	return ctx.Render(http.StatusOK, "event", params)

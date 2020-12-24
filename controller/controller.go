@@ -180,11 +180,6 @@ func New(svc *service.Service) (*Controller, error) {
 	)
 
 	controller.GET(
-		"/hackthis",
-		Chain(siteController.HackThis),
-	)
-
-	controller.GET(
 		"/sponsors",
 		Chain(siteController.Sponsors),
 	)
