@@ -19,6 +19,7 @@ import (
 	"github.com/acm-uiuc/core/controller/resume"
 	"github.com/acm-uiuc/core/controller/site"
 	"github.com/acm-uiuc/core/controller/user"
+	"github.com/acm-uiuc/core/controller/calendar"
 )
 
 type Controller struct {
@@ -47,6 +48,7 @@ func New(svc *service.Service) (*Controller, error) {
 	groupController := group.New(controller.svc)
 	resumeController := resume.New(controller.svc)
 	siteController := site.New(controller.svc)
+	calendarController := calendar.New(controller.svc)
 
 	staticBase, err := config.GetConfigValue("STATIC_BASE")
 	if err != nil {
@@ -152,6 +154,11 @@ func New(svc *service.Service) (*Controller, error) {
 				Committees: []string{model.GroupTop4, model.GroupCorporate, model.GroupAdmin},
 			},
 		)),
+	)
+
+	controller.GET(
+		"/api/calendar",
+		Chain(calendarController.GetEvents),
 	)
 
 	controller.GET(

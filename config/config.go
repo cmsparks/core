@@ -32,6 +32,7 @@ var defaultConfig = map[string]string{
 	"STORAGE_PROVIDER":            "google",
 	"GOOGLE_BUCKET_NAME":          "acm-core-resume",
 	"GOOGLE_SERVICE_ACCOUNT":      "",
+	"GOOGLE_CALENDAR_ID":          "c_ojf0k5mgqqv945s856vuh0322o@group.calendar.google.com",
 	"OAUTH_FAKE_USER":             "fake@illinois.edu",
 }
 

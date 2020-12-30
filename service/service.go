@@ -9,6 +9,7 @@ import (
 	"github.com/acm-uiuc/core/service/group"
 	"github.com/acm-uiuc/core/service/resume"
 	"github.com/acm-uiuc/core/service/user"
+	"github.com/acm-uiuc/core/service/calendar"
 )
 
 type Service struct {
@@ -16,6 +17,7 @@ type Service struct {
 	User   user.UserService
 	Group  group.GroupService
 	Resume resume.ResumeService
+  Calendar calendar.CalendarService
 	Store  gitstore.GitStore
 }
 
@@ -40,16 +42,22 @@ func New() (*Service, error) {
 		return nil, fmt.Errorf("failed to create resume service: %w", err)
 	}
 
+	calendarService, err := calendar.New()
+	if err != nil {
+		return nil, fmt.Errorf("failed to create calendar service: %w", err)
+	}
+
 	store, err := gitstore.New()
 	if err != nil {
 		return nil, fmt.Errorf("failed to create store: %w", err)
 	}
 
 	return &Service{
-		Auth:   authService,
-		User:   userService,
-		Group:  groupService,
-		Resume: resumeService,
-		Store:  store,
+		Auth:     authService,
+		User:     userService,
+		Group:    groupService,
+		Resume:   resumeService,
+		Calendar: calendarService,
+		Store:    store,
 	}, nil
 }
